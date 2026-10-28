@@ -8,6 +8,24 @@
 
 新增 JSON 驱动的方柱高度编码、独立进程批量本征求解、任务状态、取消、超时与断点续跑。支持 Python、命令行及五个 MCP 批量工具。详见[接口说明](comsol_batch/README.md)和[输入示例](examples/encoded_eigenmodes/)。输出保留复本征频率和场解，不会自动把相邻模式的频差判定为耦合 gap。
 
+```powershell
+python -m comsol_batch validate examples/encoded_eigenmodes/acceptance_9x9.json
+python -m comsol_batch run examples/encoded_eigenmodes/acceptance_9x9.json --output runs/acceptance_9x9
+```
+
+### 验证进展（2026-10-28）
+
+- 已完成 3×3 冒烟测试（三种编码 × 两个共同高度偏移）及 9×9 验收测试（一种编码、一个参数点、六个候选模式）。
+- 在本地 Windows / COMSOL 6.4、4 核、网格等级 7 的条件下，9×9 本征值求解器耗时 **47 秒**；从该参数点的进度日志创建到结果文件输出约 **60 秒**。这不包含整个冷启动、建模流程的计时。
+- 另一个独立的 900 nm 散射实验，每个圆偏振求解耗时 **105–125 秒**；三种结构 × 两种圆偏振的求解阶段及中间切换约 **13 分钟**。它与本征模批量接口不同，本仓库没有将该实验作为可运行的散射示例提供。
+- 以上仅为初步本地实测，不代表网格收敛后的速度或物理结论。详见[测试条件与限制](comsol_batch/README.md#validation-and-timing)。
+
+### 当前研究路线
+
+先采用两档高度编码，直接调用 COMSOL 评价。首先识别并跟踪目标物理模式对，通过调谐扫描确认避免交叉，检查网格与 PML 收敛，再定义耦合 gap。一个本征频率参数点不等于一次完整 gap 评价。前向神经网络与主动学习是建立可靠标签和直接搜索基线后的可选步骤，目前尚未实现。
+
+MCP 批量工具需要部署此版本并重启服务才能加载；Python/CLI 接口不依赖 MCP 服务。
+
 ## ⭐ Star History
 
 [![GitHub stars](https://img.shields.io/github/stars/wjc9011/COMSOL_Multiphysics_MCP?style=social)](https://github.com/wjc9011/COMSOL_Multiphysics_MCP/stargazers)

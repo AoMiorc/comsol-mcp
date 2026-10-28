@@ -8,6 +8,24 @@ English | [中文](README_CN.md)
 
 The local extension adds JSON-driven height-array modeling, isolated eigenfrequency batches, durable progress, cancellation, timeouts, and resumable results. Use the Python/CLI API or five MCP batch tools. See the [batch interface guide](comsol_batch/README.md) and [ready-to-run input examples](examples/encoded_eigenmodes/). Mode candidates retain complex frequencies and saved field solutions; coupling gaps are not inferred automatically.
 
+```bash
+python -m comsol_batch validate examples/encoded_eigenmodes/acceptance_9x9.json
+python -m comsol_batch run examples/encoded_eigenmodes/acceptance_9x9.json --output runs/acceptance_9x9
+```
+
+### Validation status — October 28, 2026
+
+- The batch API completed a 3×3 smoke test (three encodings × two height offsets) and a 9×9 acceptance test (one encoding, one offset, six candidate modes).
+- On the tested Windows / COMSOL 6.4 setup, using four cores and mesh level 7, the 9×9 eigenvalue solver took **47 seconds**. The interval from creation of the point's progress log to its result file was approximately **60 seconds**; this is not a benchmark of the entire cold-start/build workflow.
+- A separate 9×9 scattering experiment at 900 nm took **105–125 seconds per polarization solve**. Its three structures × two circular polarizations spanned approximately **13 minutes**, including transitions between solves. This experiment is separate from the eigenmode API and is not included as a runnable scattering example here.
+- These are initial local measurements, not converged performance guarantees. See the [test conditions and limitations](comsol_batch/README.md#validation-and-timing).
+
+### Current research workflow
+
+Start with two-height encodings and direct COMSOL evaluations. Identify and track a physical mode pair, verify an avoided crossing over a tuning sweep, and check mesh/PML convergence before defining a coupling-gap objective. A single eigenfrequency point does not evaluate a gap. Forward neural networks and active-learning optimization are future options once reliable labels and a direct-search baseline are available; neither is implemented in this extension.
+
+The MCP batch tools require deployment of this version and a server restart. Python/CLI usage does not require an MCP server.
+
 ## Star History
 
 [![GitHub stars](https://img.shields.io/github/stars/wjc9011/COMSOL_Multiphysics_MCP?style=social)](https://github.com/wjc9011/COMSOL_Multiphysics_MCP/stargazers)
