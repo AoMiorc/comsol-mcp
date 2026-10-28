@@ -1,0 +1,141 @@
+{
+  "cases": [
+    {
+      "case_id": "acceptance_9x9",
+      "template": "height_array_eigenmode",
+      "geometry": {
+        "rows": 9,
+        "cols": 9,
+        "pillar_width_nm": 100,
+        "pitch_nm": 150,
+        "height_levels_nm": [
+          100,
+          200
+        ],
+        "encoding": [
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        ],
+        "air_nm": 750,
+        "substrate_nm": 500,
+        "pml_nm": 400
+      },
+      "tuning": {
+        "parameter": "height_offset_nm",
+        "values": [
+          0
+        ]
+      },
+      "study": {
+        "type": "eigenfrequency",
+        "search_frequency_THz": 335,
+        "number_of_modes": 6
+      },
+      "mesh": {
+        "level": 7
+      },
+      "runtime": {
+        "cores": 4,
+        "timeout_seconds": 1800,
+        "version": "6.4"
+      }
+    }
+  ]
+}

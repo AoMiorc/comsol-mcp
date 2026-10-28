@@ -4,6 +4,10 @@
 
 [English](README.md) | 中文
 
+## 高度编码批量本征模接口
+
+新增 JSON 驱动的方柱高度编码、独立进程批量本征求解、任务状态、取消、超时与断点续跑。支持 Python、命令行及五个 MCP 批量工具。详见[接口说明](comsol_batch/README.md)和[输入示例](examples/encoded_eigenmodes/)。输出保留复本征频率和场解，不会自动把相邻模式的频差判定为耦合 gap。
+
 ## ⭐ Star History
 
 [![GitHub stars](https://img.shields.io/github/stars/wjc9011/COMSOL_Multiphysics_MCP?style=social)](https://github.com/wjc9011/COMSOL_Multiphysics_MCP/stargazers)

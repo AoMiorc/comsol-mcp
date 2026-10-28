@@ -24,6 +24,7 @@ from .tools.electrochemistry import register_electrochemistry_tools
 from .tools.mesh import register_mesh_tools
 from .tools.study import register_study_tools
 from .tools.results import register_results_tools
+from .tools.batch import register_batch_tools
 from .resources.model_resources import register_model_resources
 from .knowledge.embedded import register_knowledge_tools
 
@@ -74,6 +75,7 @@ def register_all_tools() -> None:
     register_mesh_tools(mcp)
     register_study_tools(mcp)
     register_results_tools(mcp)
+    register_batch_tools(mcp)
     register_knowledge_tools(mcp)
     logger.info("Registered all tools")
 

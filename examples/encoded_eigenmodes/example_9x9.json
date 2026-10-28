@@ -1,0 +1,417 @@
+{
+  "cases": [
+    {
+      "case_id": "code9_asymmetric",
+      "template": "height_array_eigenmode",
+      "geometry": {
+        "rows": 9,
+        "cols": 9,
+        "pillar_width_nm": 100,
+        "pitch_nm": 150,
+        "height_levels_nm": [
+          100,
+          200
+        ],
+        "encoding": [
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        ],
+        "air_nm": 750,
+        "substrate_nm": 500,
+        "pml_nm": 400
+      },
+      "tuning": {
+        "parameter": "height_offset_nm",
+        "values": [
+          0,
+          10
+        ]
+      },
+      "study": {
+        "type": "eigenfrequency",
+        "search_frequency_THz": 335,
+        "number_of_modes": 6
+      },
+      "mesh": {
+        "level": 5
+      },
+      "runtime": {
+        "cores": 4,
+        "timeout_seconds": 1800,
+        "version": "6.4"
+      }
+    },
+    {
+      "case_id": "code9_mirror",
+      "template": "height_array_eigenmode",
+      "geometry": {
+        "rows": 9,
+        "cols": 9,
+        "pillar_width_nm": 100,
+        "pitch_nm": 150,
+        "height_levels_nm": [
+          100,
+          200
+        ],
+        "encoding": [
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ]
+        ],
+        "air_nm": 750,
+        "substrate_nm": 500,
+        "pml_nm": 400
+      },
+      "tuning": {
+        "parameter": "height_offset_nm",
+        "values": [
+          0,
+          10
+        ]
+      },
+      "study": {
+        "type": "eigenfrequency",
+        "search_frequency_THz": 335,
+        "number_of_modes": 6
+      },
+      "mesh": {
+        "level": 5
+      },
+      "runtime": {
+        "cores": 4,
+        "timeout_seconds": 1800,
+        "version": "6.4"
+      }
+    },
+    {
+      "case_id": "code9_uniform",
+      "template": "height_array_eigenmode",
+      "geometry": {
+        "rows": 9,
+        "cols": 9,
+        "pillar_width_nm": 100,
+        "pitch_nm": 150,
+        "height_levels_nm": [
+          134.5679012345679
+        ],
+        "encoding": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "air_nm": 750,
+        "substrate_nm": 500,
+        "pml_nm": 400
+      },
+      "tuning": {
+        "parameter": "height_offset_nm",
+        "values": [
+          0,
+          10
+        ]
+      },
+      "study": {
+        "type": "eigenfrequency",
+        "search_frequency_THz": 335,
+        "number_of_modes": 6
+      },
+      "mesh": {
+        "level": 5
+      },
+      "runtime": {
+        "cores": 4,
+        "timeout_seconds": 1800,
+        "version": "6.4"
+      }
+    }
+  ]
+}

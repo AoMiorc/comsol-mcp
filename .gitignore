@@ -10,6 +10,7 @@ venv/
 logs/
 snapshots/
 solver_jobs/
+runs/
 evaluated_data/
 comsol_models/
 knowledge_base/

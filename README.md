@@ -4,6 +4,10 @@ MCP Server for COMSOL Multiphysics simulation automation via AI agents.
 
 English | [中文](README_CN.md)
 
+## Encoded-height eigenmode batches
+
+The local extension adds JSON-driven height-array modeling, isolated eigenfrequency batches, durable progress, cancellation, timeouts, and resumable results. Use the Python/CLI API or five MCP batch tools. See the [batch interface guide](comsol_batch/README.md) and [ready-to-run input examples](examples/encoded_eigenmodes/). Mode candidates retain complex frequencies and saved field solutions; coupling gaps are not inferred automatically.
+
 ## Star History
 
 [![GitHub stars](https://img.shields.io/github/stars/wjc9011/COMSOL_Multiphysics_MCP?style=social)](https://github.com/wjc9011/COMSOL_Multiphysics_MCP/stargazers)
