@@ -4,6 +4,12 @@
 
 [English](README.md) | 中文
 
+## 精确像素几何与手性反交叉实验
+
+独立的[smooth-metasurface项目](smooth-metasurface/README.md)将连通二值像素精确合并为平面轮廓后整体拉伸，包含Mode-CY的9项Pasteur本构改写、同介质κ=0对照和厚度扫描。110×110编码图案在约166.634 nm处测得**20.18 GHz**实频分裂，对照为**0.141 GHz**，并观察到偏振混合。Windows / COMSOL 6.4、4核条件下六次求解共约10.3分钟，项目36项测试通过。
+
+详见[条件与限制](smooth-metasurface/ENCODED_GAP_TEST.md)、[结果图](smooth-metasurface/results/encoded-gap-v3/gap_scan.png)和[可重画的数据](smooth-metasurface/results/encoded-gap-v3)。这是外加材料手性下的稀疏采样初步验证，尚未完成网格收敛，不证明纯几何手性，也不是最大gap优化结果。大型MPH场解、恢复文件及本地环境保留本机。
+
 ## 高度编码批量本征模接口
 
 新增 JSON 驱动的方柱高度编码、独立进程批量本征求解、任务状态、取消、超时与断点续跑。支持 Python、命令行及五个 MCP 批量工具。详见[接口说明](comsol_batch/README.md)和[输入示例](examples/encoded_eigenmodes/)。输出保留复本征频率和场解，不会自动把相邻模式的频差判定为耦合 gap。

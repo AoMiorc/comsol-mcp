@@ -1,0 +1,17 @@
+{
+  "encoding_file": "paper_chiral_110.npy",
+  "geometry": {
+    "period_nm": 550
+  },
+  "solver": {
+    "thicknesses_nm": [
+      165.9
+    ],
+    "num_modes": 6,
+    "mesh_level": 4,
+    "cores": 4
+  },
+  "chiral": {
+    "enabled": true
+  }
+}

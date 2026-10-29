@@ -1,0 +1,23 @@
+{
+  "encoding_file": "structured_220.npy",
+  "geometry": {
+    "period_nm": 550
+  },
+  "solver": {
+    "thicknesses_nm": [
+      165.9
+    ],
+    "num_modes": 6,
+    "mesh_level": 4,
+    "cores": 4
+  },
+  "chiral": {
+    "enabled": true,
+    "medium_index": 1.45,
+    "epsilon_imag": -0.0001,
+    "mu_real": 1.0,
+    "mu_imag": -1e-05,
+    "kappa_real": 0.00012,
+    "kappa_imag": -3e-05
+  }
+}

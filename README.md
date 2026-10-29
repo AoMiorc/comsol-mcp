@@ -4,6 +4,12 @@ MCP Server for COMSOL Multiphysics simulation automation via AI agents.
 
 English | [中文](README_CN.md)
 
+## Exact pixel geometry and chiral avoided-crossing experiment
+
+The independent [smooth-metasurface project](smooth-metasurface/README.md) compiles connected binary pixels into exact planar contours and extrudes each region together. It includes the nine Mode-CY Pasteur constitutive overrides, matched zero-kappa controls, and a thickness-scan driver. The 110×110 encoded example measured a **20.18 GHz** real-frequency separation near 166.634 nm versus **0.141 GHz** for the zero-kappa control, with polarization mixing. Six solves completed in approximately 10.3 minutes on Windows / COMSOL 6.4 with four cores; 36 project tests passed.
+
+See the [conditions and limitations](smooth-metasurface/ENCODED_GAP_TEST.md), [measured plot](smooth-metasurface/results/encoded-gap-v3/gap_scan.png), and [replot-ready data](smooth-metasurface/results/encoded-gap-v3). This is a sparse, unconverged validation with imposed material chirality, not proof of geometry-only chirality or a maximized gap. Large MPH solutions, recovery files and local environments are excluded.
+
 ## Encoded-height eigenmode batches
 
 The local extension adds JSON-driven height-array modeling, isolated eigenfrequency batches, durable progress, cancellation, timeouts, and resumable results. Use the Python/CLI API or five MCP batch tools. See the [batch interface guide](comsol_batch/README.md) and [ready-to-run input examples](examples/encoded_eigenmodes/). Mode candidates retain complex frequencies and saved field solutions; coupling gaps are not inferred automatically.

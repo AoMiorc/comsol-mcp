@@ -1,0 +1,74 @@
+{
+  "thickness_nm": 165.9,
+  "mesh_elements": 103343,
+  "mesh_seconds": 0.25603839999530464,
+  "solve_seconds": 91.1818559000094,
+  "slab_volume_m3": 2.9488724999999934e-20,
+  "expected_slab_volume_m3": 2.9488725e-20,
+  "modes": [
+    {
+      "index": 1,
+      "real_THz": 334.83519357028763,
+      "imag_THz": 0.003949648220464417,
+      "Q_abs": 42387.976710862145,
+      "slab_field_fraction": 0.20912903668016092,
+      "slab_Ez_fraction": 0.006774385811698435,
+      "classification": "unclassified"
+    },
+    {
+      "index": 2,
+      "real_THz": 334.9464368528292,
+      "imag_THz": 0.0035642300549393923,
+      "Q_abs": 46987.20785273845,
+      "slab_field_fraction": 0.16572126850261176,
+      "slab_Ez_fraction": 0.8195852763657612,
+      "classification": "unclassified"
+    },
+    {
+      "index": 3,
+      "real_THz": 342.3259184241215,
+      "imag_THz": 0.2130201618502793,
+      "Q_abs": 803.5059110149499,
+      "slab_field_fraction": 0.16221500815493314,
+      "slab_Ez_fraction": 0.7947741422212775,
+      "classification": "unclassified"
+    },
+    {
+      "index": 4,
+      "real_THz": 342.3833546423961,
+      "imag_THz": 0.19962464291637932,
+      "Q_abs": 857.5678574558976,
+      "slab_field_fraction": 0.16276239362771272,
+      "slab_Ez_fraction": 0.7939505362693645,
+      "classification": "unclassified"
+    }
+  ],
+  "chiral_diagnostics": {
+    "electric_chiral_fraction": [
+      8.486246893354726e-33,
+      8.185445880765442e-33,
+      8.155017608397679e-33,
+      7.911785898926288e-33
+    ],
+    "electric_constitutive_residual": [
+      8.486246893354726e-33,
+      8.18544588076544e-33,
+      8.155017608397679e-33,
+      7.911785898926288e-33
+    ],
+    "magnetic_constitutive_residual": [
+      6.399531994592697e-33,
+      6.290449773170134e-33,
+      6.270312794016863e-33,
+      6.528960925311333e-33
+    ],
+    "magnetic_time_residual": [
+      1.9948105682100267e-32,
+      2.2606325505940393e-32,
+      2.0970235390227765e-32,
+      2.3289013749334252e-32
+    ]
+  },
+  "gap": null,
+  "mode_tracking": "not_implemented"
+}

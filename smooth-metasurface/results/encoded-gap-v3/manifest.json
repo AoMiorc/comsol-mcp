@@ -1,0 +1,8 @@
+{
+  "source_run": "encoded-gap-v3-v2",
+  "published_format": "Lightweight results and common-coordinate complex field samples; full MPH solutions remain local.",
+  "analyze_command": "python analyze_encoded_gap.py results/encoded-gap-v3",
+  "tests": "36 passed",
+  "comsol_version": "6.4",
+  "cores": 4
+}

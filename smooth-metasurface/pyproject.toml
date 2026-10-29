@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smooth-metasurface"
+version = "0.3.0"
+description = "Exact binary geometry compression and Mode-CY Pasteur constitutive equations in COMSOL"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "shapely>=2.0,<3", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+comsol = ["mph>=1.2", "JPype1>=1.5"]
+test = ["pytest>=7"]
+
+[project.scripts]
+smoothmeta = "smoothmeta.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["smoothmeta*"]
+
+[tool.setuptools.package-data]
+smoothmeta = ["mode_cy_equations.json"]

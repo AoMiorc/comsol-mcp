@@ -1,0 +1,73 @@
+{
+  "enabled": true,
+  "reference": "Mode-CY.mph / ewfd.wee1",
+  "geometry_compiler_version": 2,
+  "chiral_domains": [
+    4
+  ],
+  "slab_domains": [
+    3
+  ],
+  "pml_domains": [
+    5,
+    1
+  ],
+  "overrides": [
+    {
+      "identifier": "emw.Dx",
+      "occurrence": 0,
+      "expression": "epsilon0_const*emw.Ex+emw.Px-1i*kappa*emw.Hx/c0",
+      "verified": true
+    },
+    {
+      "identifier": "emw.Dy",
+      "occurrence": 0,
+      "expression": "epsilon0_const*emw.Ey+emw.Py-1i*kappa*emw.Hy/c0",
+      "verified": true
+    },
+    {
+      "identifier": "emw.Dz",
+      "occurrence": 0,
+      "expression": "epsilon0_const*emw.Ez+emw.Pz-1i*kappa*emw.Hz/c0",
+      "verified": true
+    },
+    {
+      "identifier": "emw.Hx",
+      "occurrence": 0,
+      "expression": "(emw.murinvxx*(emw.Bx-1i*kappa*emw.Ex/c0)+emw.murinvxy*(emw.By-1i*kappa*emw.Ey/c0)+emw.murinvxz*(emw.Bz-1i*kappa*emw.Ez/c0))/mu0_const",
+      "verified": true
+    },
+    {
+      "identifier": "emw.Hy",
+      "occurrence": 0,
+      "expression": "(emw.murinvyx*(emw.Bx-1i*kappa*emw.Ex/c0)+emw.murinvyy*(emw.By-1i*kappa*emw.Ey/c0)+emw.murinvyz*(emw.Bz-1i*kappa*emw.Ez/c0))/mu0_const",
+      "verified": true
+    },
+    {
+      "identifier": "emw.Hz",
+      "occurrence": 0,
+      "expression": "(emw.murinvzx*(emw.Bx-1i*kappa*emw.Ex/c0)+emw.murinvzy*(emw.By-1i*kappa*emw.Ey/c0)+emw.murinvzz*(emw.Bz-1i*kappa*emw.Ez/c0))/mu0_const",
+      "verified": true
+    },
+    {
+      "identifier": "emw.dHdtx",
+      "occurrence": 0,
+      "expression": "(emw.murinvxx*(emw.dBdtx-1i*kappa*emw.iomega*emw.Ex/c0)+emw.murinvxy*(emw.dBdty-1i*kappa*emw.iomega*emw.Ey/c0)+emw.murinvxz*(emw.dBdtz-1i*kappa*emw.iomega*emw.Ez/c0))/mu0_const",
+      "verified": true
+    },
+    {
+      "identifier": "emw.dHdty",
+      "occurrence": 0,
+      "expression": "(emw.murinvyx*(emw.dBdtx-1i*kappa*emw.iomega*emw.Ex/c0)+emw.murinvyy*(emw.dBdty-1i*kappa*emw.iomega*emw.Ey/c0)+emw.murinvyz*(emw.dBdtz-1i*kappa*emw.iomega*emw.Ez/c0))/mu0_const",
+      "verified": true
+    },
+    {
+      "identifier": "emw.dHdtz",
+      "occurrence": 0,
+      "expression": "(emw.murinvzx*(emw.dBdtx-1i*kappa*emw.iomega*emw.Ex/c0)+emw.murinvzy*(emw.dBdty-1i*kappa*emw.iomega*emw.Ey/c0)+emw.murinvzz*(emw.dBdtz-1i*kappa*emw.iomega*emw.Ez/c0))/mu0_const",
+      "verified": true
+    }
+  ],
+  "eigen_reference": "f_search",
+  "eigen_reference_active": "on"
+}

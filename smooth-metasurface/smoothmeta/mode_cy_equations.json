@@ -1,0 +1,65 @@
+[
+  {
+    "identifier": "ewfd.Dx",
+    "expression": "epsilon0_const*ewfd.Ex+ewfd.Px-1i*kappa*ewfd.Hx/c0",
+    "units": "C/m^2",
+    "entities": "域 4, 6",
+    "occurrence": "0"
+  },
+  {
+    "identifier": "ewfd.Dy",
+    "expression": "epsilon0_const*ewfd.Ey+ewfd.Py-1i*kappa*ewfd.Hy/c0",
+    "units": "C/m^2",
+    "entities": "域 4, 6",
+    "occurrence": "0"
+  },
+  {
+    "identifier": "ewfd.Dz",
+    "expression": "epsilon0_const*ewfd.Ez+ewfd.Pz-1i*kappa*ewfd.Hz/c0",
+    "units": "C/m^2",
+    "entities": "域 4, 6",
+    "occurrence": "0"
+  },
+  {
+    "identifier": "ewfd.Hx",
+    "expression": "(ewfd.murinvxx*(ewfd.Bx-1i*kappa*ewfd.Ex/c0)+ewfd.murinvxy*(ewfd.By-1i*kappa*ewfd.Ey/c0)+ewfd.murinvxz*(ewfd.Bz-1i*kappa*ewfd.Ez/c0))/mu0_const",
+    "units": "A/m",
+    "entities": "域 4, 6",
+    "occurrence": "0"
+  },
+  {
+    "identifier": "ewfd.Hy",
+    "expression": "(ewfd.murinvyx*(ewfd.Bx-1i*kappa*ewfd.Ex/c0)+ewfd.murinvyy*(ewfd.By-1i*kappa*ewfd.Ey/c0)+ewfd.murinvyz*(ewfd.Bz-1i*kappa*ewfd.Ez/c0))/mu0_const",
+    "units": "A/m",
+    "entities": "域 4, 6",
+    "occurrence": "0"
+  },
+  {
+    "identifier": "ewfd.Hz",
+    "expression": "(ewfd.murinvzx*(ewfd.Bx-1i*kappa*ewfd.Ex/c0)+ewfd.murinvzy*(ewfd.By-1i*kappa*ewfd.Ey/c0)+ewfd.murinvzz*(ewfd.Bz-1i*kappa*ewfd.Ez/c0))/mu0_const",
+    "units": "A/m",
+    "entities": "域 4, 6",
+    "occurrence": "0"
+  },
+  {
+    "identifier": "ewfd.dHdtx",
+    "expression": "(ewfd.murinvxx*(ewfd.dBdtx-1i*kappa*ewfd.iomega*ewfd.Ex/c0)+ewfd.murinvxy*(ewfd.dBdty-1i*kappa*ewfd.iomega*ewfd.Ey/c0)+ewfd.murinvxz*(ewfd.dBdtz-1i*kappa*ewfd.iomega*ewfd.Ez/c0))/mu0_const",
+    "units": "A/(m*s)",
+    "entities": "域 4, 6",
+    "occurrence": "0"
+  },
+  {
+    "identifier": "ewfd.dHdty",
+    "expression": "(ewfd.murinvyx*(ewfd.dBdtx-1i*kappa*ewfd.iomega*ewfd.Ex/c0)+ewfd.murinvyy*(ewfd.dBdty-1i*kappa*ewfd.iomega*ewfd.Ey/c0)+ewfd.murinvyz*(ewfd.dBdtz-1i*kappa*ewfd.iomega*ewfd.Ez/c0))/mu0_const",
+    "units": "A/(m*s)",
+    "entities": "域 4, 6",
+    "occurrence": "0"
+  },
+  {
+    "identifier": "ewfd.dHdtz",
+    "expression": "(ewfd.murinvzx*(ewfd.dBdtx-1i*kappa*ewfd.iomega*ewfd.Ex/c0)+ewfd.murinvzy*(ewfd.dBdty-1i*kappa*ewfd.iomega*ewfd.Ey/c0)+ewfd.murinvzz*(ewfd.dBdtz-1i*kappa*ewfd.iomega*ewfd.Ez/c0))/mu0_const",
+    "units": "A/(m*s)",
+    "entities": "域 4, 6",
+    "occurrence": "0"
+  }
+]
